@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/styleResponsive.css">
+    <link rel="stylesheet" href="/css/detail.css">
+    <title>Leirbaggr</title>
+</head>
+
+<body>
+    <section id="header">
+        <a href="/pages/Home/Home.html">
+            <h4>Leirbaggr</h4>
+        </a>
+
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="/pages/Home/Home.html">Início</a></li>
+                <li><a href="/pages/Cart/Cart.html">Carrinho</a></li>
+                <li><a href="/pages/Shop/Shop.html">Shop</a></li>
+                <li><a href="#">Suporte</a></li>
+                <div class="shopping">
+                    <a id="ico" href="/pages/Profile/Profile.html"><li id="lg-bag"><i class="fa-solid fa-user"></i></li></a>
+                </div>
+                <i id="close" class="fa-solid fa-xmark"></i>
+            </ul>
+        </div>
+        <div id="mobile">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="modal" id="modal">
+            <div class="modal-content" id="modalContent">
+                <h5>Seus Pedidos</h5>
+            </div>
+            <button id="closeBtn" class="close">Fechar</button>
+            <button id="saveBtn" class="open">Salvar</button>
+        </div>
+    </section>
+
+    <section>
+        <div class="container flex">
+            <div class="left">
+                <div class="main_image">
+                    <img src="/assets/out.jpg" class="slide">
+                </div>
+            </div>
+            <div class="right">
+                <h3 class="title">Outlast 2</h3>
+                <h4 class="value">R$69.90</h4>
+                <p class="lorem">
+                    Outlast 2: Blake Langermann, um jornalista investigativo e cinegrafista, e sua esposa Lynn
+                    Langermann, que trabalham juntos, sofrem um acidente de helicóptero na região de Supai, localizada
+                    no Planalto do Colorado, Arizona, enquanto investigavam o misterioso assassinato de uma jovem
+                    grávida conhecida apenas como Jane Doe.
+                </p>
+                <h5 class="number">Quantidade</h5>
+                <div class="add flex1">
+                    <input type="number" placeholder="0" required id="valor">
+                </div>
+
+                <button class="buy"><i class="fa-solid fa-cart-shopping cart"></i> Adicionar no Carrinho</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="form">
+            <div class="comments">
+                <h4 id="title">Deixe um comentário</h4>
+                <span class="span">
+                    Deixe um comentário sobre o que achou do jogo,
+                    aproveite e dê uma nota para o jogo também.
+                </span>
+                <input required class="input" type="number" min="1" max="5" placeholder="Dê uma nota de 1 a 5"
+                       id="validation">
+                <textarea required id="comment" cols="30" rows="10"
+                          placeholder="Escreva o seu comentário sobre o jogo"></textarea>
+        
+                <button class="send" onclick="enviarComentario()">Enviar</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <section id="testimonials">
+            <div class="testimonials-heading">
+                <h1 class="client">Cometários</h1>
+                <span>Usuários</span>
+            </div>
+
+            <div class="testimonials-box-container" id="testimonials-container">
+
+            </div>
+        </section>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <h4 class="logo">Leirbaggr</h4>
+            <h4>Contato</h4>
+            <p><strong>Endereço:</strong> 562 Divinópolis MG, Brazil</p>
+            <p><strong>Telefone:</strong> +55 379922 4365</p>
+            <p><strong>Horário:</strong> 10:00 - 18:00, Seg - Sex</p>
+
+            <div class="follow">
+                <h4>Siga-nos</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>Sobre</h4>
+            <a href="#">Sobre nós</a>
+            <a href="#">Informação de entrega</a>
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos e Condições</a>
+            <a href="#">Contate-nos</a>
+        </div>
+
+        <div class="col">
+            <h4>Minha conta</h4>
+            <a href="#">Entrar</a>
+            <a href="#">Ver carrinho</a>
+            <a href="#">Minha Lista de Desejos</a>
+            <a href="#">Acompanhar o meu pedido</a>
+            <a href="#">Ajuda</a>
+        </div>
+
+        <div class="col install">
+            <h3>Tipos de pagamentos seguros</h3>
+            <img src="/assets/pay.png" alt="">
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <p>&copy; 2024 Leirbaggr Company</p>
+    </div>
+
+    <script src="/js/Home.js"></script>
+    <script src="/js/Comments.js"></script>
+    <script src="/js/Commen.js"></script>
+    <script src="https://kit.fontawesome.com/8b3930b39b.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

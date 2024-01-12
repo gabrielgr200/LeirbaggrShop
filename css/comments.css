@@ -1,0 +1,23 @@
+@media (max-width: 1060px) {
+    .testimonial-box {
+        width: 45%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 790px) {
+    .testimonial-box {
+        width: 100%;
+    }
+
+    .testimonial-heading h1 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 340px) {
+    .box-top {
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+}

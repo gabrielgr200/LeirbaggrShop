@@ -11,23 +11,33 @@
 
 <body>
     <section id="header">
-        <a href="/index.html">
+        <a href="/pages/Home/Home.html">
             <h4>Leirbaggr</h4>
         </a>
 
         <div>
             <ul id="navbar">
-                <li><a class="active" href="/index.html">Início</a></li>
-                <li><a href="#">Sobre</a></li>
+                <li><a class="active" href="/pages/Home/Home.html">Início</a></li>
+                <li><a href="/pages/Cart/Cart.html">Carrinho</a></li>
                 <li><a href="/pages/Shop/Shop.html">Shop</a></li>
                 <li><a href="#">Suporte</a></li>
-                <li id="lg-bag"><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <!-- <div class="shopping">
+                    <li id="lg-bag"><i class="fa-solid fa-bag-shopping shopping-icon" id="shop"></i></li>
+                </div> -->
                 <i id="close" class="fa-solid fa-xmark"></i>
             </ul>
         </div>
         <div id="mobile">
             <i class="fa-solid fa-bag-shopping"></i>
             <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="modal" id="modal">
+            <div class="modal-content" id="modalContent">
+                <h5>Seus Pedidos</h5>
+            </div>
+            <button id="closeBtn" class="close">Fechar</button>
+            <button id="saveBtn" class="open">Salvar</button>
         </div>
     </section>
 

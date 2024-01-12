@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "name": "Call of Duty Modern Warfare 2",
+        "price": "90.98",
+        "image": "../../../assets/mw2.jpg",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis maxime magnam corporis beatae sequi distinctio vero vitae numquam totam placeat!"
+    },
+    {
+        "id": 2,
+        "name": "Ghost Recon Future Soldier",
+        "price": "69.90",
+        "image": "../../../assets/mw2.jpg",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis maxime magnam corporis beatae sequi distinctio vero vitae numquam totam placeat!"
+    },
+    {
+        "id": 3,
+        "name": "Splinter Cell Black List",
+        "price": "39.00",
+        "image": "../../../assets/mw2.jpg",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis maxime magnam corporis beatae sequi distinctio vero vitae numquam totam placeat!"
+    },
+    {
+        "id": 4,
+        "name": "Payday 2",
+        "price": "78,00",
+        "image": "../../../assets/mw2.jpg",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis maxime magnam corporis beatae sequi distinctio vero vitae numquam totam placeat!"
+    },
+    {
+        "id": 5,
+        "name": "My Friend Pedro",
+        "price": "50.00",
+        "image": "../../../assets/mw2.jpg",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis maxime magnam corporis beatae sequi distinctio vero vitae numquam totam placeat!"
+    },
+    {
+        "id": 6,
+        "name": "Far Cry 3",
+        "price": "67.60",
+        "image": "../../../assets/mw2.jpg",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis maxime magnam corporis beatae sequi distinctio vero vitae numquam totam placeat!"
+    },
+    {
+        "id": 7,
+        "name": "battlefield 3",
+        "price": "67.60",
+        "image": "../../../assets/mw2.jpg",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis maxime magnam corporis beatae sequi distinctio vero vitae numquam totam placeat!"
+    },
+    {
+        "id": 8,
+        "name": "Tomb Raider",
+        "price": "146.00",
+        "image": "../../../assets/mw2.jpg",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis maxime magnam corporis beatae sequi distinctio vero vitae numquam totam placeat!"
+    }
+]

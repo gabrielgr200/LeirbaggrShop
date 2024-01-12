@@ -2,277 +2,81 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/styleResponsive.css">
-    <title>Leirbaggr</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/styles.css" />
+  <title>Leirbaggr</title>
 </head>
 
 <body>
-    <section id="header">
-        <a href="/index.html">
-            <h4>Leirbaggr</h4>
-        </a>
+  <div class="container">
+    <div class="forms-container">
+      <div class="signin-signup">
 
-        <div>
-            <ul id="navbar">
-                <li><a class="active" href="/index.html">Início</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="/pages/Shop/Shop.html">Shop</a></li>
-                <li><a href="#">Suporte</a></li>
-                <li id="lg-bag"><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
-                <i id="close" class="fa-solid fa-xmark"></i>
-            </ul>
-        </div>
-        <div id="mobile">
-            <i class="fa-solid fa-bag-shopping"></i>
-            <i id="bar" class="fa-solid fa-bars"></i>
-        </div>
-    </section>
+        <form id="loginForm" class="sign-in-form">
+          <h2 class="title">Login</h2>
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input type="text" name="identifier" placeholder="Nome de Usuário ou Email" required />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input type="password" name="password" placeholder="Senha" required />
+          </div>
+          <input type="submit" value="Login" class="btn solid" />
+          <a href="#" class="social-text">Esqueceu a senha?</a>
+        </form>
 
-    <section id="hero">
-        <h4>Leirbaggr</h4>
-        <h2>Ofertas valorizadas</h2>
-        <h1>Em todos os produtos</h1>
-        <a href="/pages/Shop/Shop.html"><button>Comprar</button></a>
-    </section>
-
-    <section id="feature" class="section-p1">
-        <div class="fe-box">
-            <img src="/assets/tiro.png">
-            <a href="/pages/Jogos/Tiro/Tiro.html"><h6>Jogos de Tiros</h6></a>
-        </div>
-
-        <div class="fe-box">
-            <img src="/assets/car.png">
-            <a href="/pages/Jogos/Corrida/Corrida.html"><h6>Jogos de Corridas</h6></a>
-        </div>
-
-        <div class="fe-box">
-            <img src="/assets/ghost.png">
-            <a href="/pages/Jogos/Terror/Terror.html"><h6>Jogos de Terror</h6></a>
-        </div>
-    </section>
-
-    <section id="product1" class="section-p1">
-        <h2>Novos jogos chegando em breve</h2>
-        <p>Um novo começo está chegando</p>
-        <div class="pro-container">
-            <div class="pro">
-                <img src="/assets/spider.png" alt="">
-                <div class="des">
-                    <span>playstation</span>
-                    <h5>Spider Man 2 Edição deluxe</h5>
-                    <div class="start">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <h4>Em breve</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-            </div>
-
-            <div class="pro">
-                <img src="/assets/teste.avif" alt="">
-                <div class="des">
-                    <span>xbox, playstation</span>
-                    <h5>Batman Arkham City</h5>
-                    <div class="start">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <h4>Em breve</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-            </div>
-
-            <div class="pro">
-                <img src="/assets/payday3.avif" alt="">
-                <div class="des">
-                    <span>xbox, playstation</span>
-                    <h5>Payday 3</h5>
-                    <div class="start">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <h4>Em breve</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-            </div>
-
-            <div class="pro">
-                <img src="/assets/destiny.jpg" alt="">
-                <div class="des">
-                    <span>xbox, playstation</span>
-                    <h5>Mortal Kombat 1</h5>
-                    <div class="start">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <h4>Em breve</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <section id="banner" class="section-m1">
-        <h4>Repair Services</h4>
-        <h2>Up to <span>70% off</span> - All t-Shirts & Accessories</h2>
-        <button class="normal">Explore More</button>
-    </section>
-
-    <section id="product1" class="section-p1">
-        <h2>Jogos mais vendidos</h2>
-        <div class="pro-container">
-            <div class="pro">
-                <img src="/assets/far4.avif" alt="">
-                <div class="des">
-                    <span>xbox, playstation</span>
-                    <h5>Far Cry 4</h5>
-                    <div class="start">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <h4><del>R$312.89</del> - R$63.79</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-            </div>
-
-            <div class="pro">
-                <img src="/assets/origins.jpg" alt="">
-                <div class="des">
-                    <span>xbox, playstation</span>
-                    <h5>Batman Arkham Origins</h5>
-                    <div class="start">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <h4>R$129.00</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-            </div>
-
-            <div class="pro">
-                <img src="/assets/zelda.webp" alt="">
-                <div class="des">
-                    <span>nintendo</span>
-                    <h5>Zelda Breath of the Wild</h5>
-                    <div class="start">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <h4>149.00</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-            </div>
-
-            <div class="pro">
-                <img src="/assets/gta.jpg" alt="">
-                <div class="des">
-                    <span>xbox, playstation</span>
-                    <h5>Grand Threft Auto V</h5>
-                    <div class="start">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <h4><del>119.00</del> - 90.60</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <section id="sm-banner" class="section-p1">
-        <div class="banner-box">
-            <h4>Jogo online League Of Legends</h4>
-            <h2>Totalmente de graça</h2>
-            <span>O melhor jogo no seu Pc</span>
-            <button class="white">Em breve</button>
-        </div>
-
-        <div class="banner-box banner-box2">
-            <h4>Jogo online Warzone</h4>
-            <h2>De graça para os jogadores</h2>
-            <span>Um perfeito jogo de mundo aberto de tiro</span>
-            <button class="white">Em breve</button>
-        </div>
-    </section>
-
-    <footer class="section-p1">
-        <div class="col">
-            <h4 class="logo">Leirbaggr</h4>
-            <h4>Contato</h4>
-            <p><strong>Endereço:</strong> 562 Divinópolis MG, Brazil</p>
-            <p><strong>Telefone:</strong> +55 379922 4365</p>
-            <p><strong>Horário:</strong> 10:00 - 18:00, Seg - Sex</p>
-
-            <div class="follow">
-                <h4>Siga-nos</h4>
-                <div class="icon">
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-x-twitter"></i>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <h4>Sobre</h4>
-            <a href="#">Sobre nós</a>
-            <a href="#">Informação de entrega</a>
-            <a href="#">Política de Privacidade</a>
-            <a href="#">Termos e Condições</a>
-            <a href="#">Contate-nos</a>
-        </div>
-
-        <div class="col">
-            <h4>Minha conta</h4>
-            <a href="#">Entrar</a>
-            <a href="#">Ver carrinho</a>
-            <a href="#">Minha Lista de Desejos</a>
-            <a href="#">Acompanhar o meu pedido</a>
-            <a href="#">Ajuda</a>
-        </div>
-
-        <div class="col install">
-            <h3>Tipos de pagamentos seguros</h3>
-            <img src="/assets/pay.png" alt="">
-        </div>
-    </footer>
-
-    <div class="copyright">
-        <p>&copy; 2024 Leirbaggr Company</p>
+        <form id="registrationForm" class="sign-up-form">
+          <h2 class="title">Cadastrar</h2>
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input type="text" name="name" placeholder="Nome de Usuário" required />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-envelope"></i>
+            <input type="email" name="email" placeholder="Email" required />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input type="password" name="password" placeholder="Senha" required />
+          </div>
+          <input type="submit" class="btn" value="Cadastrar" />
+        </form>
+      </div>
     </div>
 
+    <div class="panels-container">
+      <div class="panel left-panel">
+        <div class="content">
+          <h3>Novo aqui ?</h3>
+          <p>
+            Seja Bem Vindo, faça o cadastro para comprar o seu jogo preferido.
+          </p>
+          <button class="btn transparent" id="sign-up-btn">
+            Cadastrar
+          </button>
+        </div>
+        <img src="/assets/pc.png" class="image" alt="" />
+      </div>
+      <div class="panel right-panel">
+        <div class="content">
+          <h3>Um de nós ?</h3>
+          <p>
+            Agora que você é um de nós, faça o login para ter acesso aos jogos.
+          </p>
+          <button class="btn transparent" id="sign-in-btn">
+            Login
+          </button>
+        </div>
+        <img src="/assets/place.png" class="image" alt="" />
+      </div>
+    </div>
+  </div>
 
-    <script src="/js/Home.js"></script>
-    <script src="https://kit.fontawesome.com/8b3930b39b.js" crossorigin="anonymous"></script>
+  <script src="/js/app.js"></script>
+  <script src="/js/Login.js"></script>
 </body>
 
 </html>

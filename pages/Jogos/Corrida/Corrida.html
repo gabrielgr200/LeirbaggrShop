@@ -11,23 +11,33 @@
 
 <body>
     <section id="header">
-        <a href="/index.html">
+        <a href="/pages/Home/Home.html">
             <h4>Leirbaggr</h4>
         </a>
 
         <div>
             <ul id="navbar">
-                <li><a class="active" href="/index.html">Início</a></li>
-                <li><a href="#">Sobre</a></li>
+                <li><a class="active" href="/pages/Home/Home.html">Início</a></li>
+                <li><a href="/pages/Cart/Cart.html">Carrinho</a></li>
                 <li><a href="/pages/Shop/Shop.html">Shop</a></li>
                 <li><a href="#">Suporte</a></li>
-                <li id="lg-bag"><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <div class="shopping">
+                    <a id="ico" href="/pages/Profile/Profile.html"><li id="lg-bag"><i class="fa-solid fa-user"></i></li></a>
+                </div>
                 <i id="close" class="fa-solid fa-xmark"></i>
             </ul>
         </div>
         <div id="mobile">
             <i class="fa-solid fa-bag-shopping"></i>
             <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="modal" id="modal">
+            <div class="modal-content" id="modalContent">
+                <h5>Seus Pedidos</h5>
+            </div>
+            <button id="closeBtn" class="close">Fechar</button>
+            <button id="saveBtn" class="open">Salvar</button>
         </div>
     </section>
 
@@ -36,139 +46,83 @@
         <p>Aqui você encontrará apenas adrenalina</p>
         <div class="pro-container">
             <div class="pro">
-                <img src="" alt="">
+                <img src="/assets/forza.jpg" alt="">
                 <div class="des">
                     <span>xbox</span>
                     <h5>Forza Horizon</h5>
-                    <div class="start">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
                     <h4>R$179,99</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <a href="/pages/description/Corridas/Forza1/Forza1.html"><i class="fa-solid fa-plus cart"></i></a>
             </div>
 
             <div class="pro">
-                <img src="" alt="">
+                <img src="/assets/forza2.png" alt="">
                 <div class="des">
                     <span>xbox</span>
                     <h5>Forza Horizon 2</h5>
-                    <div class="start">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
                     <h4><del>R$50.0</del> - R$49.47</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <a href="/pages/description/Corridas/Forza2/Forza2.html"><i class="fa-solid fa-plus cart"></i></a>
             </div>
 
             <div class="pro">
-                <img src="" alt="">
+                <img src="/assets/forza3.jpg" alt="">
                 <div class="des">
                     <span>xbox</span>
                     <h5>Forza Horizon 3</h5>
-                    <div class="start">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
                     <h4><del>R$49.90</del> - R$39.00</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <a href="/pages/description/Corridas/Forza3/Forza3.html"><i class="fa-solid fa-plus cart"></i></a>
             </div>
 
             <div class="pro">
-                <img src="" alt="">
+                <img src="/assets/forza4.jpg" alt="">
                 <div class="des">
                     <span>xbox</span>
                     <h5>Forza Horizon 4</h5>
-                    <div class="start">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
                     <h4>R$200,00</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <a href="/pages/description/Corridas/Forza4/Forza4.html"><i class="fa-solid fa-plus cart"></i></a>
             </div>
 
             <div class="pro">
-                <img src="" alt="">
+                <img src="/assets/hot.jpg" alt="">
                 <div class="des">
                     <span>playstation</span>
                     <h5>Need For Speed Hot Pursuit</h5>
-                    <div class="start">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
                     <h4><del>R$100.00</del> - R$50.00</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <a href="/pages/description/Corridas/hot/Hot.html"><i class="fa-solid fa-plus cart"></i></a>
             </div>
 
             <div class="pro">
-                <img src="" alt="">
+                <img src="/assets/most.webp" alt="">
                 <div class="des">
                     <span>playstation</span>
                     <h5>Need For Speed Most Wanted</h5>
-                    <div class="start">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
                     <h4><del>R$280.00</del> - R$120.00</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <a href="/pages/description/Corridas/Most/Most.html"><i class="fa-solid fa-plus cart"></i></a>
             </div>
 
             <div class="pro">
-                <img src="" alt="">
+                <img src="/assets/payback.jpg" alt="">
                 <div class="des">
                     <span>playstation</span>
                     <h5>Need for Speed Payback</h5>
-                    <div class="start">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
                     <h4>R$200.00</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <a href="/pages/description/Corridas/Payback/Payback.html"><i class="fa-solid fa-plus cart"></i></a>
             </div>
 
             <div class="pro">
-                <img src="" alt="">
+                <img src="/assets/heat.png" alt="">
                 <div class="des">
                     <span>playstation</span>
                     <h5>Need for Speed Heat</h5>
-                    <div class="start">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
                     <h4>R$246.00</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <a href="/pages/description/Corridas/Heat/Heat.html"><i class="fa-solid fa-plus cart"></i></a>
             </div>
         </div>
     </section>

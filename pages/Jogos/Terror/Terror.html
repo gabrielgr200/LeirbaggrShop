@@ -11,23 +11,33 @@
 
 <body>
     <section id="header">
-        <a href="/index.html">
+        <a href="/pages/Home/Home.html">
             <h4>Leirbaggr</h4>
         </a>
 
         <div>
             <ul id="navbar">
-                <li><a class="active" href="/index.html">Início</a></li>
-                <li><a href="#">Sobre</a></li>
+                <li><a class="active" href="/pages/Home/Home.html">Início</a></li>
+                <li><a href="/pages/Cart/Cart.html">Carrinho</a></li>
                 <li><a href="/pages/Shop/Shop.html">Shop</a></li>
                 <li><a href="#">Suporte</a></li>
-                <li id="lg-bag"><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <div class="shopping">
+                    <a id="ico" href="/pages/Profile/Profile.html"><li id="lg-bag"><i class="fa-solid fa-user"></i></li></a>
+                </div>
                 <i id="close" class="fa-solid fa-xmark"></i>
             </ul>
         </div>
         <div id="mobile">
             <i class="fa-solid fa-bag-shopping"></i>
             <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="modal" id="modal">
+            <div class="modal-content" id="modalContent">
+                <h5>Seus Pedidos</h5>
+            </div>
+            <button id="closeBtn" class="close">Fechar</button>
+            <button id="saveBtn" class="open">Salvar</button>
         </div>
     </section>
 
@@ -36,139 +46,83 @@
         <p>Cuidado com os monstros que vivem na escuridão</p>
         <div class="pro-container">
             <div class="pro">
-                <img src="" alt="">
+                <img src="/assets/alan.jpg" alt="">
                 <div class="des">
                     <span>xbox, playstation</span>
                     <h5>Alan Wake 2</h5>
-                    <div class="start">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
                     <h4>R$280,00</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <a href="/pages/description/Terror/Alan/Alan.html"><i class="fa-solid fa-plus cart"></i></a>
             </div>
 
             <div class="pro">
-                <img src="" alt="">
+                <img src="/assets/last.jpg" alt="">
                 <div class="des">
                     <span>xbox, playstation</span>
                     <h5>Outlast 2</h5>
-                    <div class="start">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
                     <h4><del>R$109.00</del> - R$69.90</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <a href="/pages/description/Terror/Outlast/Outlast.html"><i class="fa-solid fa-plus cart"></i></a>
             </div>
 
             <div class="pro">
-                <img src="" alt="">
+                <img src="/assets/five.webp" alt="">
                 <div class="des">
                     <span>xbox, playstation</span>
                     <h5>Five Nights at Freddy's</h5>
-                    <div class="start">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
                     <h4><del>R$49.90</del> - R$39.00</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <a href="/pages/description/Terror/Five/Five.html"><i class="fa-solid fa-plus cart"></i></a>
             </div>
 
             <div class="pro">
-                <img src="" alt="">
+                <img src="/assets/village.jpg" alt="">
                 <div class="des">
                     <span>playstation</span>
                     <h5>Resident Evil Village</h5>
-                    <div class="start">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
                     <h4>R$139,00</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <a href="/pages/description/Terror/Resident/Resident.html"><i class="fa-solid fa-plus cart"></i></a>
             </div>
 
             <div class="pro">
-                <img src="" alt="">
+                <img src="/assets/alien.jpg" alt="">
                 <div class="des">
                     <span>xbox,playstation</span>
                     <h5>Alien Isolation</h5>
-                    <div class="start">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
                     <h4><del>R$100.00</del> - R$50.00</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <a href="/pages/description/Terror/Alien/Alien.html"><i class="fa-solid fa-plus cart"></i></a>
             </div>
 
             <div class="pro">
-                <img src="" alt="">
+                <img src="/assets/space.jpg" alt="">
                 <div class="des">
                     <span>xbox, playstation</span>
                     <h5>Dead Space</h5>
-                    <div class="start">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
                     <h4>R$86.00</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <a href="/pages/description/Terror/Dead/Dead.html"><i class="fa-solid fa-plus cart"></i></a>
             </div>
 
             <div class="pro">
-                <img src="" alt="">
+                <img src="/assets/dawn.jpg" alt="">
                 <div class="des">
                     <span>xbox, playstation</span>
                     <h5>Until Dawn</h5>
-                    <div class="start">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
                     <h4><del>$100.00</del> - $67.60</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <a href="/pages/description/Terror/Until/Until.html"><i class="fa-solid fa-plus cart"></i></a>
             </div>
 
             <div class="pro">
-                <img src="" alt="">
+                <img src="/assets/pacify.jpg" alt="">
                 <div class="des">
                     <span>Pc</span>
                     <h5>Pacify</h5>
-                    <div class="start">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
                     <h4>R$146.00</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <a href="/pages/description/Terror/Pacify/Pacify.html"><i class="fa-solid fa-plus cart"></i></a>
             </div>
         </div>
     </section>

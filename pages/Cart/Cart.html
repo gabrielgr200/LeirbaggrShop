@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/styleResponsive.css">
+    <title>Leirbaggr</title>
+</head>
+
+<body>
+    <section id="header">
+        <a href="/pages/Home/Home.html">
+            <h4>Leirbaggr</h4>
+        </a>
+
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="/pages/Home/Home.html">Início</a></li>
+                <li><a href="/pages/Cart/Cart.html">Carrinho</a></li>
+                <li><a href="/pages/Shop/Shop.html">Shop</a></li>
+                <li><a href="#">Suporte</a></li>
+                <!-- <div class="shopping">
+                    <li id="lg-bag"><i class="fa-solid fa-bag-shopping shopping-icon" id="shop"></i></li>
+                </div> -->
+                <i id="close" class="fa-solid fa-xmark"></i>
+            </ul>
+        </div>
+        <div id="mobile">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="modal" id="modal">
+            <div class="modal-content" id="modalContent">
+                <h5>Seus Pedidos</h5>
+            </div>
+            <button id="closeBtn" class="close">Fechar</button>
+            <button id="saveBtn" class="open">Salvar</button>
+        </div>
+    </section>
+
+    <section id="cart" class="container-cart section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remover</td>
+                    <td>Imagem</td>
+                    <td>Produto</td>
+                    <td>Preço</td>
+                    <td>Quantidade</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody id="cartItems">
+               
+            </tbody>
+        </table>
+        <button type="button" class="purchase-button">Finalizar Compra</button>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <h4 class="logo">Leirbaggr</h4>
+            <h4>Contato</h4>
+            <p><strong>Endereço:</strong> 562 Divinópolis MG, Brazil</p>
+            <p><strong>Telefone:</strong> +55 379922 4365</p>
+            <p><strong>Horário:</strong> 10:00 - 18:00, Seg - Sex</p>
+
+            <div class="follow">
+                <h4>Siga-nos</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>Sobre</h4>
+            <a href="#">Sobre nós</a>
+            <a href="#">Informação de entrega</a>
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos e Condições</a>
+            <a href="#">Contate-nos</a>
+        </div>
+
+        <div class="col">
+            <h4>Minha conta</h4>
+            <a href="#">Entrar</a>
+            <a href="#">Ver carrinho</a>
+            <a href="#">Minha Lista de Desejos</a>
+            <a href="#">Acompanhar o meu pedido</a>
+            <a href="#">Ajuda</a>
+        </div>
+
+        <div class="col install">
+            <h3>Tipos de pagamentos seguros</h3>
+            <img src="/assets/pay.png" alt="">
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <p>&copy; 2024 Leirbaggr Company</p>
+    </div>
+
+    <script src="/js/Home.js"></script>
+    <script src="/js/Main.js"></script>
+    <script src="https://kit.fontawesome.com/8b3930b39b.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

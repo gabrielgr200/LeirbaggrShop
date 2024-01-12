@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/profile.css">
+    <title>Leirbaggr</title>
+</head>
+
+<body>
+    <section id="header">
+        <a href="/pages/Home/Home.html">
+            <h4>Leirbaggr</h4>
+        </a>
+
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="/pages/Home/Home.html">Início</a></li>
+                <li><a href="/pages/Cart/Cart.html">Carrinho</a></li>
+                <li><a href="/pages/Shop/Shop.html">Shop</a></li>
+                <li><a href="#">Suporte</a></li>
+                <div class="shopping">
+                    <a id="ico" href="/pages/Profile/Profile.html">
+                        <li id="lg-bag"><i class="fa-solid fa-user"></i></li>
+                    </a>
+                </div>
+                <i id="close" class="fa-solid fa-xmark"></i>
+            </ul>
+        </div>
+        <div id="mobile">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="modal" id="modal">
+            <div class="modal-content" id="modalContent">
+                <h5>Seus Pedidos</h5>
+            </div>
+            <button id="closeBtn" class="close">Fechar</button>
+            <button id="saveBtn" class="open">Salvar</button>
+        </div>
+    </section>
+
+    <header>
+        <div class="container">
+            <div class="container__left">
+                <h1>Dados do Usuário</h1>
+                <p class="input-field">
+                    <i class="fas fa-user field"></i>
+                    <input type="text" name="name" id="name" readonly>
+                </p>
+                <p class="input-field">
+                    <i class="fa-solid fa-envelope field"></i>
+                    <input type="email" name="email" id="email" readonly>
+                </p>
+                <button onclick="deleteAccount()">Excluir Conta</button>
+            </div>
+            <div class="container__right">
+                <div class="card">
+                    <i class="fa-solid fa-lock user"></i>
+                    <div class="card__content">
+                        <span><i class="ri-double-quotes-l"></i></span>
+                        <div class="card__details">
+                            <p>
+                                Alterar a sua Senha <i class="fa-solid fa-arrow-right arrow"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-envelope user"></i>
+                    <div class="card__content">
+                        <span><i class="ri-double-quotes-l"></i></span>
+                        <div class="card__details">
+                            <p>
+                                Alterar o seu Email <i class="fa-solid fa-arrow-right arrow"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-file-signature user"></i>
+                    <div class="card__content">
+                        <span><i class="ri-double-quotes-l"></i></span>
+                        <div class="card__details">
+                            <p>
+                                Alterar o seu Nome <i class="fa-solid fa-arrow-right arrow"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script src="/js/Profile.js"></script>
+    <script src="https://kit.fontawesome.com/8b3930b39b.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
