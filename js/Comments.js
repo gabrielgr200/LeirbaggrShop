@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Faz uma solicitação usando a API Fetch
-    fetch("https://web-production-bccd.up.railway.app/listar-comentarios")
+    fetch("http://localhost:3440/listar-comentarios")
         .then(response => response.json())
         .then(data => {
             var container = document.getElementById("testimonials-container");

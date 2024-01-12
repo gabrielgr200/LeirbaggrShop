@@ -5,7 +5,7 @@ async function enviarComentario() {
     const token = localStorage.getItem("userToken");
 
     try {
-        const response = await fetch("https://web-production-bccd.up.railway.app/comentarios", {
+        const response = await fetch("https://api-ecommerce-l0vi.onrender.com/comentarios", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

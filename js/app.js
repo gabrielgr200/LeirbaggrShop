@@ -21,7 +21,7 @@ document.getElementById('registrationForm').addEventListener('submit', async fun
   });
 
   try {
-    const response = await fetch('https://web-production-bccd.up.railway.app/register', {
+    const response = await fetch('https://api-ecommerce-l0vi.onrender.com/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
