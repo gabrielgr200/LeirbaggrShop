@@ -23,7 +23,9 @@
                 <li><a href="/pages/Shop/Shop.html">Shop</a></li>
                 <li><a href="#">Suporte</a></li>
                 <div class="shopping">
-                    <a id="ico" href="/pages/Profile/Profile.html"><li id="lg-bag"><i class="fa-solid fa-user"></i></li></a>
+                    <a id="ico" href="/pages/Profile/Profile.html">
+                        <li id="lg-bag"><i class="fa-solid fa-user"></i></li>
+                    </a>
                 </div>
                 <i id="close" class="fa-solid fa-xmark"></i>
             </ul>
@@ -33,13 +35,6 @@
             <i id="bar" class="fa-solid fa-bars"></i>
         </div>
 
-        <div class="modal" id="modal">
-            <div class="modal-content" id="modalContent">
-                <h5>Seus Pedidos</h5>
-            </div>
-            <button id="closeBtn" class="close">Fechar</button>
-            <button id="saveBtn" class="open">Salvar</button>
-        </div>
     </section>
 
     <section>
@@ -74,10 +69,10 @@
                     aproveite e dê uma nota para o jogo também.
                 </span>
                 <input required class="input" type="number" min="1" max="5" placeholder="Dê uma nota de 1 a 5"
-                       id="validation">
+                    id="validation">
                 <textarea required id="comment" cols="30" rows="10"
-                          placeholder="Escreva o seu comentário sobre o jogo"></textarea>
-        
+                    placeholder="Escreva o seu comentário sobre o jogo"></textarea>
+
                 <button class="send" onclick="enviarComentario()">Enviar</button>
             </div>
         </div>

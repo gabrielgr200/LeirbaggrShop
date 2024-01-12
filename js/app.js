@@ -21,7 +21,7 @@ document.getElementById('registrationForm').addEventListener('submit', async fun
   });
 
   try {
-    const response = await fetch('https://api-ecommerce-l0vi.onrender.com/register', {
+    const response = await fetch('https://apiecommerce-316ae4f1fc8b.herokuapp.com/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

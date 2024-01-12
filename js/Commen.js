@@ -5,7 +5,7 @@ async function enviarComentario() {
     const token = localStorage.getItem("userToken");
 
     try {
-        const response = await fetch("https://api-ecommerce-l0vi.onrender.com/comentarios", {
+        const response = await fetch("https://apiecommerce-316ae4f1fc8b.herokuapp.com/comentarios", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

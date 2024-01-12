@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Faz uma solicitação usando a API Fetch
-    fetch("https://api-ecommerce-l0vi.onrender.com/listar-comentarios")
+    fetch("https://apiecommerce-316ae4f1fc8b.herokuapp.com/listar-comentarios")
         .then(response => response.json())
         .then(data => {
             var container = document.getElementById("testimonials-container");
@@ -29,7 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     container.insertAdjacentHTML('beforeend', testimonialBox);
                 });
             } else {
-                // Se não houver comentários ou o contêiner não foi encontrado
                 console.error("Sem comentários disponíveis ou contêiner não encontrado.");
                 console.log("Container:", container);
                 console.log("Data:", data);
@@ -37,7 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch(error => {
             console.error(error);
-            // Manipula erros de solicitação
             var container = document.getElementById("testimonials-container");
             if (container) {
                 container.innerHTML = "<p>Erro ao obter comentários.</p>";

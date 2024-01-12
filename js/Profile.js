@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function fetchUserData() {
   try {
-      const response = await fetch('https://api-ecommerce-l0vi.onrender.com/user', {
+      const response = await fetch('https://apiecommerce-316ae4f1fc8b.herokuapp.com/user', {
           headers: {
               Authorization: `Bearer ${getToken()}`
           }
@@ -40,7 +40,7 @@ function getToken() {
 
 async function deleteAccount() {
   try {
-      const response = await fetch('https://api-ecommerce-l0vi.onrender.com/user', {
+      const response = await fetch('https://apiecommerce-316ae4f1fc8b.herokuapp.com/user', {
           method: 'DELETE',
           headers: {
               Authorization: `Bearer ${getToken()}`
