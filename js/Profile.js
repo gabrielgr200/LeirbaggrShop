@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function fetchUserData() {
   try {
-      const response = await fetch('http://localhost:3440/user', {
+      const response = await fetch('https://web-production-bccd.up.railway.app/user', {
           headers: {
               Authorization: `Bearer ${getToken()}`
           }
@@ -40,7 +40,7 @@ function getToken() {
 
 async function deleteAccount() {
   try {
-      const response = await fetch('http://localhost:3440/user', {
+      const response = await fetch('https://web-production-bccd.up.railway.app/user', {
           method: 'DELETE',
           headers: {
               Authorization: `Bearer ${getToken()}`

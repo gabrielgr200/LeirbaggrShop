@@ -21,7 +21,7 @@ document.getElementById('registrationForm').addEventListener('submit', async fun
   });
 
   try {
-    const response = await fetch('http://localhost:3440/register', {
+    const response = await fetch('https://web-production-bccd.up.railway.app/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
