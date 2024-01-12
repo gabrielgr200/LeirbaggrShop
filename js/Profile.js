@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function fetchUserData() {
   try {
-      const response = await fetch('https://web-production-14da.up.railway.app/user', {
+      const response = await fetch('https://api-ecommerce-l0vi.onrender.com/user', {
           headers: {
               Authorization: `Bearer ${getToken()}`
           }

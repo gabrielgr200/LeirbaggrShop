@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Faz uma solicitação usando a API Fetch
-    fetch("http://localhost:3440/listar-comentarios")
+    fetch("https://api-ecommerce-l0vi.onrender.com/listar-comentarios")
         .then(response => response.json())
         .then(data => {
             var container = document.getElementById("testimonials-container");
