@@ -42,7 +42,7 @@ document.getElementById('loginForm').addEventListener('submit', async function (
           });
           setTimeout(() => {
             notification.close();
-          }, 5000);
+          }, 3000);
         }
       });
     }
