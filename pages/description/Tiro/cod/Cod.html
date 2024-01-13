@@ -19,7 +19,7 @@
 
         <div>
             <ul id="navbar">
-                <li><a class="active" href="/pages/Home/Home.html">Início</a></li>
+                <li><a href="/pages/Home/Home.html">Início</a></li>
                 <li><a href="/pages/Cart/Cart.html">Carrinho</a></li>
                 <li><a href="/pages/Shop/Shop.html">Shop</a></li>
                 <li><a href="#">Suporte</a></li>
@@ -40,10 +40,10 @@
 
 
     <section>
-        <div class="container flex">
+        <div class="container flex" id="productContainer">
             <div class="left">
                 <div class="main_image">
-                    <img src="/assets/codwar.png" class="slide">
+                    <img src="https://i.postimg.cc/8kfLM8mS/codwar.jpg" id="slide" class="slide">
                 </div>
             </div>
 
@@ -59,10 +59,10 @@
                 </p>
                 <h5 class="number">Quantidade</h5>
                 <div class="add flex1">
-                    <input type="number" placeholder="0" required id="valor" min="0">
+                    <input type="number" placeholder="0" min="1" value="1" required id="valor" min="0">
                 </div>
 
-                <button class="buy"><i class="fa-solid fa-cart-shopping cart"></i> Adicionar no Carrinho</button>
+                <button class="buy" id="addToCartBtn"><i class="fa-solid fa-cart-shopping cart"></i> Adicionar no Carrinho</button>
             </div>
         </div>
 
@@ -148,6 +148,7 @@
     <script src="/js/Home.js"></script>
     <script src="/js/Comments.js"></script>
     <script src="/js/Commen.js"></script>
+    <script src="/js/Main.js"></script>
     <script src="https://kit.fontawesome.com/8b3930b39b.js" crossorigin="anonymous"></script>
 </body>
 

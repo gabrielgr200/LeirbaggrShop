@@ -38,10 +38,10 @@
     </section>
 
     <section>
-        <div class="container flex">
+        <div class="container flex" id="productContainer">
             <div class="left">
                 <div class="main_image">
-                    <img src="/assets/tomb.jpg" class="slide">
+                    <img src="https://i.postimg.cc/yYgM9NkT/tomb.jpg" id="slide" class="slide">
                 </div>
             </div>
             <div class="right">
@@ -58,10 +58,10 @@
                 </p>
                 <h5 class="number">Quantidade</h5>
                 <div class="add flex1">
-                    <input type="number" placeholder="0" required id="valor">
+                    <input type="number" placeholder="0" min="1" value="1" required id="valor">
                 </div>
 
-                <button class="buy"><i class="fa-solid fa-cart-shopping cart"></i> Adicionar no Carrinho</button>
+                <button class="buy" id="addToCartBtn"><i class="fa-solid fa-cart-shopping cart"></i> Adicionar no Carrinho</button>
             </div>
         </div>
 

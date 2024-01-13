@@ -162,6 +162,19 @@
     #sm-banner .banner-box {
         height: 40vh;
     }
+
+    #cart-add {
+        flex-direction: column;
+    }
+
+    #coupon  {
+        width: 100%;
+    }
+
+    #subtotal {
+        width: 100%;
+        padding: 20px;
+    }
 }
 
 @media (max-width: 360px) {

@@ -61,7 +61,7 @@ button.normal {
   cursor: pointer;
   border: none;
   outline: none;
-  transition: 0.2s ease;
+  transition: 0.3s ease;
 }
 
 button.white {
@@ -77,7 +77,7 @@ button.white {
 }
 
 button.normal:hover {
-  scale: 1.1;
+  transform: scale(1.2);
 }
 
 body {
@@ -122,6 +122,7 @@ body {
   background-color: #fff;
   cursor: pointer;
   display: flex;
+  transition: all 0.3s ease-out;
   box-shadow: 4px 8px rgba(0, 0, 0, 0.02);
 }
 
@@ -130,7 +131,7 @@ body {
 }
 
 .shopping:hover {
-  scale: 1.1;
+  transform: scale(1.1);
 }
 
 #navbar .shopping-icon {

@@ -39,10 +39,10 @@
     </section>
 
     <section>
-        <div class="container flex">
+        <div class="container flex" id="productContainer">
             <div class="left">
                 <div class="main_image">
-                    <img src="/assets/viper.webp" class="slide">
+                    <img src="https://i.postimg.cc/GtFrrvxq/viper.jpg" id="slide" class="slide">
                 </div>
             </div>
             <div class="right">
@@ -55,10 +55,10 @@
                 </p>
                 <h5 class="number">Quantidade</h5>
                 <div class="add flex1">
-                    <input type="number" placeholder="0" required id="valor">
+                    <input type="number" placeholder="0" min="1" required value="1" id="valor">
                 </div>
 
-                <button class="buy"><i class="fa-solid fa-cart-shopping cart"></i> Adicionar no Carrinho</button>
+                <button class="buy" id="addToCartBtn"><i class="fa-solid fa-cart-shopping cart"></i> Adicionar no Carrinho</button>
             </div>
         </div>
 
@@ -143,6 +143,8 @@
     <script src="/js/Home.js"></script>
     <script src="/js/Comments.js"></script>
     <script src="/js/Commen.js"></script>
+    <script src="/js/Main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://kit.fontawesome.com/8b3930b39b.js" crossorigin="anonymous"></script>
 </body>
 

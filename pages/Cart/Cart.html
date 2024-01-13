@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/styleResponsive.css">
+    <link rel="stylesheet" href="/css/cart.css">
     <title>Leirbaggr</title>
 </head>
 
@@ -32,13 +33,13 @@
             </ul>
         </div>
         <div id="mobile">
-            <i class="fa-solid fa-bag-shopping"></i>
+            <i class="fa-solid fa-user"></i>
             <i id="bar" class="fa-solid fa-bars"></i>
         </div>
     </section>
 
-    <section id="cart" class="container-cart section-p1">
-        <table width="100%">
+    <section id="cart" class="section-p1">
+        <table width="100%" id="userProductsTable">
             <thead>
                 <tr>
                     <td>Remover</td>
@@ -49,11 +50,39 @@
                     <td>Subtotal</td>
                 </tr>
             </thead>
-            <tbody id="cartItems">
-               
+            <tbody>
+                <!-- Table rows will be dynamically populated here -->
             </tbody>
         </table>
-        <button type="button" class="purchase-button">Finalizar Compra</button>
+    </section>
+
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Aplicar cupom</h3>
+            <div>
+                <input type="text" name="" placeholder="Digite cupom" id="">
+                <button class="normal">Aplicar</button>
+            </div>
+        </div>
+
+        <div id="subtotal">
+            <h3>Total Dos Pedidos</h3>
+            <table>
+                <tr>
+                    <td>Subtotal Da Compra</td>
+                    <td>R$ 300.00</td>
+                </tr>
+                <tr>
+                    <td>Envio</td>
+                    <td>Grátis</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>R$ 300.00</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Finalizar Compra</button>
+        </div>
     </section>
 
     <footer class="section-p1">
@@ -103,7 +132,7 @@
     </div>
 
     <script src="/js/Home.js"></script>
-    <script src="/js/Main.js"></script>
+    <script src="/js/Card.js"></script>
     <script src="https://kit.fontawesome.com/8b3930b39b.js" crossorigin="anonymous"></script>
 </body>
 

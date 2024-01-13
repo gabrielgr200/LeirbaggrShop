@@ -1,44 +1,63 @@
-const shopIcon = document.getElementById('shop');
-const addToCartIcons = document.querySelectorAll('.addToCart');
-const modal = document.getElementById('modal');
-const modalContent = document.getElementById('modalContent');
-const closeBtn = document.getElementById('closeBtn');
+document.addEventListener('DOMContentLoaded', function () {
+  var addToCartBtn = document.getElementById('addToCartBtn');
 
-shopIcon.addEventListener('click', function () {
-  modal.style.display = 'block';
-});
+  addToCartBtn.addEventListener('click', function () {
 
-closeBtn.addEventListener('click', function () {
-  modal.style.display = 'none';
-});
+    var name = document.querySelector('.title').textContent.trim();
+    var price = parseFloat(document.querySelector('.value').textContent.replace('R$', '').trim());
+    var quantity = parseInt(document.getElementById('valor').value);
+    var image = document.getElementById('slide').src;
 
-addToCartIcons.forEach(icon => {
-  icon.addEventListener('click', function () {
-    const productImage = icon.closest('.pro').querySelector('img').src;
-    const productName = icon.closest('.pro').querySelector('h5').innerText;
-    const productPrice = parseFloat(icon.closest('.pro').querySelector('h4').innerText.replace(/[^\d.-]/g, ''));
-    const content = `
-      <img src="${productImage}" alt="${productName}">
-      <h5>${productName}</h5>
-      <label for="quantity">Quantidade:</label>
-      <input type="number" id="quantity" value="1">
-      <p id="totalPrice">Preço: R$ ${productPrice.toFixed(2)}</p>
-    `;
-    modalContent.innerHTML = content;
+    if (quantity < 1 || isNaN(quantity)) {
+      console.error('Invalid quantity');
+      showNotification('Quantidade inválida', 'Por favor, insira uma quantidade válida.');
+      return;
+    }
 
-    modal.style.display = 'block';
+    var userToken = localStorage.getItem('userToken');
 
-    const quantityInput = document.getElementById('quantity');
-    quantityInput.min = '0';
+    if (!userToken) {
+      console.error('User token not found');
 
-    quantityInput.addEventListener('input', function () {
-      const totalPriceElement = document.getElementById('totalPrice');
-      const totalPrice = productPrice * quantityInput.value;
-      totalPriceElement.textContent = `Total: R$ ${totalPrice.toFixed(2)}`;
+      return;
+    }
+
+    var productData = {
+      name: name,
+      price: price,
+      quantity: quantity,
+      image: image
+    };
+
+    fetch('http://localhost:3440/products', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + userToken
+      },
+      body: JSON.stringify(productData)
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      showNotification('Compra bem-sucedida', 'Produto adicionado ao carrinho com sucesso.');
+    })
+    .catch(error => {
+      console.error(error);
+      showNotification('Erro na compra', 'Ocorreu um erro ao adicionar o produto ao carrinho.');
     });
   });
-});
 
-closeBtn.addEventListener('click', function () {
-  modal.style.display = 'none';
+  function showNotification(title, message) {
+    if ('Notification' in window) {
+      Notification.requestPermission().then(function (permission) {
+        if (permission === 'granted') {
+          var options = {
+            body: message
+          };
+          var notification = new Notification(title, options);
+        }
+      });
+    }
+  }
 });
