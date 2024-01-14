@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
       image: image
     };
 
-    fetch('http://localhost:3440/products', {
+    fetch('https://apiecommerce-316ae4f1fc8b.herokuapp.com/products', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
