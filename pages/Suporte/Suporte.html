@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/support.css">
+    <link rel="stylesheet" href="/tailwindcss-colors.css">
     <link rel="stylesheet" href="/css/styleResponsive.css">
     <title>Leirbaggr</title>
 </head>
+
 <body>
     <section id="header">
         <a href="/pages/Home/Home.html">
@@ -15,19 +19,14 @@
 
         <div>
             <ul id="navbar">
-                <li><a class="active" href="/pages/Home/Home.html">Início</a></li>
+                <li><a href="/pages/Home/Home.html">Início</a></li>
                 <li><a href="/pages/Cart/Cart.html">Carrinho</a></li>
                 <li><a href="/pages/Shop/Shop.html">Shop</a></li>
-                <li><a href="#">Suporte</a></li>
+                <li><a class="active" href="/pages/Suporte/Suporte.html">Suporte</a></li>
                 <div class="shopping">
                     <a id="ico" href="/pages/Profile/Profile.html">
                         <li id="lg-bag">
                             <i class="fa-solid fa-user"></i>
-                        </li>
-                    </a>
-                    <a id="ico" href="/pages/Cart/Cart.html">
-                        <li id="lg-bag">
-                            <i class="fa-solid fa-bag-shopping"></i>
                         </li>
                     </a>
                 </div>
@@ -40,6 +39,102 @@
         </div>
     </section>
 
-    <script src="/js/Home.js"></script>i
+    <div class="container">
+        <div class="content">
+            <div class="left-side">
+                <div class="address details">
+                    <ion-icon name="map-outline"></ion-icon>
+                    <div class="topic">Endereço</div>
+                    <div class="text-one">Divinópolis, MG</div>
+                    <div class="text-two">Rua Fulano, 908</div>
+                </div>
+
+                <div class="phone details">
+                    <ion-icon name="call-outline"></ion-icon>
+                    <div class="topic">Telefone</div>
+                    <div class="text-one">+55 3798445-4590</div>
+                    <div class="text-two">+55 3798412-2978</div>
+                </div>
+
+                <div class="email details">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <div class="topic">Email</div>
+                    <div class="text-one">Leirbaggr@gmail.com</div>
+                    <div class="text-two">LeirbaggrCompany@hotmail.com</div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="topic-text">Envie-nos uma mensagem</div>
+                <p>Se tiver qualquer problema no site ou nas compras nos mande uma mensagem</p>
+                <form action="https://formsubmit.co/gomesrdg34@gmail.com" method="POST" class="form">
+                    <div class="input-box">
+                        <input type="text" name="name" id="name" placeholder="Digite o seu nome" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" name="email" id="email" placeholder="Digite o seu email" required>
+                    </div>
+                    <div class="input-box message-box">
+                        <textarea name="message" placeholder="Deixe sua duvida aqui 🎮"></textarea>
+                    </div>
+                    <div class="button">
+                        <button type="submit" class="btn">Enviar <i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="section-p1">
+        <div class="col">
+            <h4 class="logo">Leirbaggr</h4>
+            <h4>Contato</h4>
+            <p><strong>Endereço:</strong> 562 Divinópolis MG, Brazil</p>
+            <p><strong>Telefone:</strong> +55 379922 4365</p>
+            <p><strong>Horário:</strong> 10:00 - 18:00, Seg - Sex</p>
+
+            <div class="follow">
+                <h4>Siga-nos</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>Sobre</h4>
+            <a href="#">Sobre nós</a>
+            <a href="#">Informação de entrega</a>
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos e Condições</a>
+            <a href="#">Contate-nos</a>
+        </div>
+
+        <div class="col">
+            <h4>Minha conta</h4>
+            <a href="#">Entrar</a>
+            <a href="#">Ver carrinho</a>
+            <a href="#">Minha Lista de Desejos</a>
+            <a href="#">Acompanhar o meu pedido</a>
+            <a href="#">Ajuda</a>
+        </div>
+
+        <div class="col install">
+            <h3>Tipos de pagamentos seguros</h3>
+            <img src="/assets/pay.png" alt="">
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <p>&copy; 2024 Leirbaggr Company</p>
+    </div>
+
+    <script src="/js/Home.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/8b3930b39b.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -21,7 +21,7 @@
                 <li><a href="/pages/Home/Home.html">Início</a></li>
                 <li><a class="active" href="/pages/Cart/Cart.html">Carrinho</a></li>
                 <li><a href="/pages/Shop/Shop.html">Shop</a></li>
-                <li><a href="#">Suporte</a></li>
+                <li><a href="/pages/Suporte/Suporte.html">Suporte</a></li>
                 <div class="shopping">
                     <a id="ico" href="/pages/Profile/Profile.html">
                         <li id="lg-bag">
@@ -51,7 +51,7 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- Table rows will be dynamically populated here -->
+                
             </tbody>
         </table>
     </section>
@@ -60,8 +60,8 @@
         <div id="coupon">
             <h3>Aplicar cupom</h3>
             <div>
-                <input type="text" name="" placeholder="Digite cupom" id="">
-                <button class="normal">Aplicar</button>
+                <input type="text" name="" placeholder="Digite cupom" id="cupom">
+                <button class="normal" id="applyCouponBtn">Aplicar</button>
             </div>
         </div>
 
@@ -70,18 +70,22 @@
             <table>
                 <tr>
                     <td>Subtotal Da Compra</td>
-                    <td>R$ 300.00</td>
+                    <td id="subtotalAmount" class="subtotal">R$ 0.00</td>
                 </tr>
                 <tr>
-                    <td>Envio</td>
-                    <td>Grátis</td>
+                    <td>Frete</td>
+                    <td id="freight">R$ 0.00</td>
+                </tr>
+                <tr>
+                    <td>Desconto</td>
+                    <td id="discountAmount" class="discount">R$ 0.00</td>
                 </tr>
                 <tr>
                     <td><strong>Total</strong></td>
-                    <td><strong>R$ 300.00</strong></td>
+                    <td id="totalAmount" class="total"><strong>R$ 0.00</strong></td>
                 </tr>
             </table>
-            <button class="normal">Finalizar Compra</button>
+            <button class="normal" id="ckeckount">Finalizar Compra</button>
         </div>
     </section>
 

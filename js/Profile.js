@@ -67,8 +67,44 @@ async function deleteAccount() {
     }
 }
 
+function openChangePasswordModal() {
+    const modal = document.getElementById('test');
+    modal.style.display = 'block';
+}
+
 function closeModal() {
-    const modal = document.getElementById('myModal');
+    const modal = document.getElementById('test');
     modal.style.display = 'none';
 }
 
+async function changePassword() {
+    const newPassword = document.getElementById('newPassword').value;
+    const confirmPassword = document.getElementById('confirmPassword').value;
+
+    if (newPassword !== confirmPassword) {
+        alert('As senhas não coincidem. Por favor, tente novamente.');
+        return;
+    }
+
+    try {
+        const response = await fetch('https://apiecommerce-316ae4f1fc8b.herokuapp.com/user/password', {
+            method: 'PATCH',
+            headers: {
+                'Content-Type': 'application/json',
+                Authorization: `Bearer ${getToken()}`
+            },
+            body: JSON.stringify({ newPassword })
+        });
+
+        if (response.ok) {
+            closeModal();
+            alert('Senha alterada com sucesso!');
+        } else {
+            const data = await response.json();
+            alert(data.mensagem);
+        }
+    } catch (error) {
+        console.error(error);
+        alert('Erro ao alterar a senha.');
+    }
+}

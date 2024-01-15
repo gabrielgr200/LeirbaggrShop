@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/payment.css">
+    <link rel="stylesheet" href="/tailwindcss-colors.css">
+    <title>Leirbaggr</title>
+</head>
+
+<body>
+    <section class="payment-section">
+        <div class="container">
+            <div class="payment-wrapper">
+                <div class="payment-left">
+                    <div class="payment-header">
+                        <div class="payment-header-icon"><ion-icon name="flash"></ion-icon></div>
+                        <div class="payment-header-title">resumo do pedido</div>
+                        <p class="payment-header-description">Esta é apenas uma pagina de simulação não precisa colocar
+                            suas informações.</p>
+                    </div>
+                    <div class="payment-content">
+                        <div class="payment-body">
+                            <div class="payment-plan">
+                                <div class="payment-plan-type"><ion-icon name="card"
+                                        style="font-size: 30px;"></ion-icon></div>
+                                <div class="payment-plan-info">
+                                    <div class="payment-plan-info-name">O seu resumo de compras</div>
+                                    <div class="payment-plan-info-price" id="subtotal">SubTotal: R$ 0.00</div>
+                                </div>
+                            </div>
+                            <div class="payment-summary">
+                                <div class="payment-summary-item">
+                                    <div class="payment-summary-name">Valor do Frete</div>
+                                    <div class="payment-summary-price" id="freight">R$ 0.00</div>
+                                </div>
+                                <div class="payment-summary-item">
+                                    <div class="payment-summary-name">Desconto de 10%</div>
+                                    <div class="payment-summary-price" id="discount">R$ 0.00</div>
+                                </div>
+                                <div class="payment-summary-divider"></div>
+                                <div class="payment-summary-item payment-summary-total">
+                                    <div class="payment-summary-name">Total</div>
+                                    <div class="payment-summary-price" id="total">R$ 0.00</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment-right">
+                    <form class="payment-form">
+                        <h1 class="payment-title">Detalhes do pagamento</h1>
+                        <div class="payment-method">
+                            <input type="radio" name="payment-method" id="method-1" checked>
+                            <label for="method-1" class="payment-method-item">
+                                <img src="/assets/visa.png" alt="">
+                            </label>
+                            <input type="radio" name="payment-method" id="method-2">
+                            <label for="method-2" class="payment-method-item">
+                                <img src="/assets/mastercard.png" alt="">
+                            </label>
+                            <input type="radio" name="payment-method" id="method-3">
+                            <label for="method-3" class="payment-method-item">
+                                <img src="/assets/paypal.png" alt="">
+                            </label>
+                            <input type="radio" name="payment-method" id="method-4">
+                            <label for="method-4" class="payment-method-item">
+                                <img src="/assets/stripe.png" alt="">
+                            </label>
+                        </div>
+                        <div class="payment-form-group">
+                            <input type="name" placeholder=" " class="payment-form-control" id="name">
+                            <label for="text" class="payment-form-label payment-form-label-required">Nome
+                                Completo</label>
+                        </div>
+                        <div class="payment-form-group">
+                            <input type="text" placeholder=" " class="payment-form-control" id="card-number">
+                            <label class="payment-form-label payment-form-label-required">Cartão
+                                Número</label>
+                        </div>
+                        <div class="payment-form-group-flex">
+                            <div class="payment-form-group">
+                                <input type="date" placeholder=" " class="payment-form-control" id="expiry-date">
+                                <label class="payment-form-label payment-form-label-required">Data de
+                                    Expiração</label>
+                            </div>
+                            <div class="payment-form-group">
+                                <input type="text" placeholder=" " class="payment-form-control" id="cvv">
+                                <label for="cvv" class="payment-form-label payment-form-label-required">CVV</label>
+                            </div>
+                        </div>
+                        <a id="buyButton" class="payment-form-submit-button"><ion-icon
+                                name="wallet-outline" class="wallet"></ion-icon> Comprar</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <div class="over">
+        <div class="toast">
+            <div class="toast-content">
+                <ion-icon name="checkmark-circle-outline" class="check"></ion-icon>
+    
+                <div class="message">
+                    <span class="text text-1">Sucesso</span>
+                    <span class="text text-2">Compra aprovada com sucesso</span>
+                </div>
+            </div>
+            <ion-icon name="close-outline" class="close"></ion-icon>
+    
+            <div class="progress"></div>
+        </div>
+    </div> -->
+
+
+    <script src="/js/payment.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
